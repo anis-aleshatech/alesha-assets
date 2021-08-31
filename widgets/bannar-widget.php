@@ -457,8 +457,8 @@ class Bannar_Widget extends \Elementor\Widget_Base {
                                 <!-- START THE CONTENT FOR THE INTRO  -->
                                 <div class="col-md-6 intros text-start">
                                         <h1 class="display-2">
-                                                <span class="display-2--start"><?php echo $heading; ?></span>
-                                                <span class="display-2--intro"> <?php echo $sub_heading;?></span>
+                                                <span class="display-2--start"><?php echo $sub_heading;?> </span>
+                                                <span class="display-2--intro"> <?php echo $heading; ?></span>
                                                 <span class="display-2--description lh-base">
 												<?php echo $description?>
                                                 </span>
