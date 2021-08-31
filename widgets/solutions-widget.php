@@ -475,9 +475,8 @@ class Solutions_Widget extends \Elementor\Widget_Base {
 						<div class="row ">
 								
 								<!-- START THE CONTENT FOR THE Description  -->
-								<img class="shape-orange" data-aos="fade-down"
-                                        data-aos-easing="linear"
-                                        data-aos-duration="1500" src="<?php echo $solution_top_image; ?>" alt="">
+								<img class="shape-orange animated" 
+                                         src="<?php echo $solution_top_image; ?>" alt="">
 								<div class="col-12 pb-5">
 										<h1 class="display-2" id="custom-css">
 												<span class="display-2--start our-solution-title" ><?php echo $solution_title; ?></span>
