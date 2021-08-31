@@ -187,7 +187,7 @@ class Bannar_Widget extends \Elementor\Widget_Base {
                 ],
                 'default' => '#fff',
 				'selectors' => [
-					'{{WRAPPER}}  h1 .display-2--start' => 'color: {{VALUE}} !important',
+					'{{WRAPPER}}  #home  h1 .display-2--start' => 'color: {{VALUE}} !important',
 				],
 			]
         );
@@ -199,7 +199,7 @@ class Bannar_Widget extends \Elementor\Widget_Base {
 				'name' => 'subtitle_typography',
 				'label' => __( 'Typography', 'atl-extension' ),
 				'scheme' => \Elementor\Scheme_Typography::TYPOGRAPHY_1,
-				'selector' => '{{WRAPPER}} .display-2--start',
+				'selector' => '{{WRAPPER}}  #home .display-2--start',
 			]
         );
         
@@ -225,7 +225,7 @@ class Bannar_Widget extends \Elementor\Widget_Base {
                 ],
                 'default' => '#fff',
 				'selectors' => [
-					'{{WRAPPER}}  display-2--intro' => 'color: {{VALUE}}',
+					'{{WRAPPER}}  #home  .display-2--intro' => 'color: {{VALUE}}',
 				],
 			]
         );
@@ -237,7 +237,7 @@ class Bannar_Widget extends \Elementor\Widget_Base {
 				'name' => 'title_typography',
 				'label' => __( 'Typography', 'atl-extension' ),
 				'scheme' => \Elementor\Scheme_Typography::TYPOGRAPHY_1,
-				'selector' => '{{WRAPPER}}  display-2--intro',
+				'selector' => '{{WRAPPER}}  #home  .display-2--intro',
 			]
         );
         
@@ -263,7 +263,7 @@ class Bannar_Widget extends \Elementor\Widget_Base {
                 ],
                 'default' => '#fff',
 				'selectors' => [
-					'{{WRAPPER}}  display-2--description' => 'color: {{VALUE}}',
+					'{{WRAPPER}}  #home  .display-2--description' => 'color: {{VALUE}}',
 				],
 			]
         );
@@ -275,7 +275,7 @@ class Bannar_Widget extends \Elementor\Widget_Base {
 				'name' => 'desc_typography',
 				'label' => __( 'Typography', 'atl-extension' ),
 				'scheme' => \Elementor\Scheme_Typography::TYPOGRAPHY_1,
-				'selector' => '{{WRAPPER}}  display-2--description',
+				'selector' => '{{WRAPPER}}  #home  display-2--description',
 			]
         );
         
@@ -313,7 +313,7 @@ class Bannar_Widget extends \Elementor\Widget_Base {
                 ],
                 'default' => '#fff',
 				'selectors' => [
-					'{{WRAPPER}} .box-btn' => 'color: {{VALUE}}',
+					'{{WRAPPER}}  #home .box-btn' => 'color: {{VALUE}}',
 				],
 			]
         );
@@ -330,7 +330,7 @@ class Bannar_Widget extends \Elementor\Widget_Base {
                 ],
                 'default' => 'tomato',
 				'selectors' => [
-					'{{WRAPPER}} .box-btn' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}}  #home .box-btn' => 'background-color: {{VALUE}}',
 				],
 			]
         );
@@ -342,7 +342,7 @@ class Bannar_Widget extends \Elementor\Widget_Base {
 				'name' => 'btn1_typography',
 				'label' => __( 'Typography', 'atl-extension' ),
 				'scheme' => \Elementor\Scheme_Typography::TYPOGRAPHY_1,
-				'selector' => '{{WRAPPER}} .box-btn',
+				'selector' => '{{WRAPPER}}  #home .box-btn',
 			]
         );
 
@@ -354,7 +354,7 @@ class Bannar_Widget extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .box-btn' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}}  #home .box-btn' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
         );
@@ -367,7 +367,7 @@ class Bannar_Widget extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .box-btn' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}}  #home .box-btn' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -395,7 +395,7 @@ class Bannar_Widget extends \Elementor\Widget_Base {
                 ],
                 'default' => '#fff',
 				'selectors' => [
-					'{{WRAPPER}} .box-btn:hover' => 'color: {{VALUE}}',
+					'{{WRAPPER}}  #home .box-btn:hover' => 'color: {{VALUE}}',
 				],
 			]
         );
@@ -412,7 +412,7 @@ class Bannar_Widget extends \Elementor\Widget_Base {
                 ],
                 'default' => '#fff',
 				'selectors' => [
-					'{{WRAPPER}} .btn-rounded:hover' => 'background-color: {{VALUE}} !important',
+					'{{WRAPPER}}  #home .btn-rounded:hover' => 'background-color: {{VALUE}} !important',
 				],
 			]
         );
