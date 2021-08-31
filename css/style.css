@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Marcellus;
 }
 .elementor-column-gap-default>.elementor-column>.elementor-element-populated {
   padding: 0px !important;
