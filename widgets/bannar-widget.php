@@ -477,7 +477,7 @@ class Bannar_Widget extends \Elementor\Widget_Base {
 												$images=$bannerImage ? $bannerImage: plugin_dir_url( dirname( __FILE__ ) ) .'/images/intro-section-illustration.svg'; 
 											?>
                                                 <img src="<?php echo $images;?>" alt="video illutration"
-                                                        class="img-fluid animated">
+                                                        class="img-fluid  animated-topup">
                                                 
                                         </div>
                                 </div>
