@@ -475,7 +475,7 @@ class Solutions_Widget extends \Elementor\Widget_Base {
 						<div class="row ">
 								
 								<!-- START THE CONTENT FOR THE Description  -->
-								<img class="shape-orange animated" 
+								<img class="shape-orange animated-topup" 
                                          src="<?php echo $solution_top_image; ?>" alt="">
 								<div class="col-12 pb-5">
 										<h1 class="display-2" id="custom-css">

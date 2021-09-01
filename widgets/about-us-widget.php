@@ -404,7 +404,7 @@ class About_us_Widget extends \Elementor\Widget_Base {
 										$aboutImages=$aboutImage ? $aboutImage: plugin_dir_url( dirname( __FILE__ ) ) .'/images/about_us_image.svg';
 									?>
                                                 <img src="<?php echo $aboutImages; ?>" alt="video illutration"
-                                                        class="img-fluid animated">
+                                                        class="img-fluid animated-topup">
                                                         <a href="<?php echo $video_link; ?>"
                                                         class="glightbox position-absolute start-50 top-50 d-block d-md-none">
                                                         
