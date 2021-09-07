@@ -378,6 +378,7 @@ class Services_Widget extends \Elementor\Widget_Base {
 						<?php
 							if ( $settings['services_list'] ) {
 								foreach (  $settings['services_list'] as $key=> $item ) {
+								$link=$item['feature_link']['url']?  $item['feature_link']['url'] : '#';
 								$target;
 								if($item['feature_target'] == 'yes'){
 									$target='_blank';
@@ -385,7 +386,7 @@ class Services_Widget extends \Elementor\Widget_Base {
 									$target='_self';
 								}
 						?>
-						<a href="<?php echo $item['feature_link']['url'];?>" target="<?php echo $target;?>">
+						<a href="<?php  echo $link;?>" target="<?php echo $target;?>">
                                 <div class="col animated-up">
                                   <div class="card h-100 shadow">
 								  <?php
