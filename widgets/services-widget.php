@@ -386,8 +386,8 @@ class Services_Widget extends \Elementor\Widget_Base {
 									$target='_self';
 								}
 						?>
+						<a href="<?php  echo $link;?>" target="<?php echo $target;?>">
                                 <div class="col animated-up">
-									<a href="<?php  echo $link;?>" target="<?php echo $target;?>">
                                   <div class="card h-100 shadow">
 								  <?php
 										if(!empty($item['feature_icon']['value'])){
@@ -412,8 +412,8 @@ class Services_Widget extends \Elementor\Widget_Base {
                                         <span><?php echo $key+1; ?></span>
                                       </div>
                                   </div>
-								</a>    
                                 </div>
+							</a>    
 								<?php
 										}
 									}
