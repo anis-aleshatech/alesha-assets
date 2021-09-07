@@ -99,6 +99,29 @@ class Services_Widget extends \Elementor\Widget_Base {
 		$repeater = new \Elementor\Repeater();
 
 		$repeater->add_control(
+			'feature_link',
+			[
+				'label' => __( 'Services Page Link', 'atl-extension' ),
+				'type' => \Elementor\Controls_Manager::URL,
+				'placeholder' => __( 'Write Linke Here', 'atl-extension' ),
+			
+			]
+        );
+        
+
+		$repeater->add_control(
+			'feature_target',
+			[
+				'label' => __( 'Open With New Page', 'atl-extension' ),
+				'type' => \Elementor\Controls_Manager::SWITCHER,
+				'default'=>'off',
+			]
+        );
+        
+
+
+
+		$repeater->add_control(
 			'feature_media_type',
 			[
 				'label' => __( 'Media Type', 'atl-extension' ),
@@ -348,13 +371,21 @@ class Services_Widget extends \Elementor\Widget_Base {
 
 
 	<section id="featured" class="featured">
+		
                 <div class="container">
                     
                         <div  class="row row-cols-1 <?php echo $services_column_class;?> g-5 text-center" data-aos="fade-up">
 						<?php
 							if ( $settings['services_list'] ) {
 								foreach (  $settings['services_list'] as $key=> $item ) {
+								$target;
+								if($item['feature_target'] == 'yes'){
+									$target='_blank';
+								}else if ($item['feature_target'] == 'off'){
+									$target='_self';
+								}
 						?>
+						<a href="<?php echo $item['feature_link']['url'];?>" target="<?php echo $target;?>">
                                 <div class="col animated-up">
                                   <div class="card h-100 shadow">
 								  <?php
@@ -373,6 +404,9 @@ class Services_Widget extends \Elementor\Widget_Base {
 										}
 									?>
                                     <div class="card-body">
+
+								
+
                                       <h5 class="card-title"><?php echo $item['service_title'];?></h5>
                                       <p class="card-text"><?php echo $item['service_desc'];?></p>
                                     </div>
@@ -381,6 +415,7 @@ class Services_Widget extends \Elementor\Widget_Base {
                                       </div>
                                   </div>
                                 </div>
+							</a>    
 								<?php
 										}
 									}
@@ -388,7 +423,7 @@ class Services_Widget extends \Elementor\Widget_Base {
                         </div>
                         
                 </div>
-               
+				 
         </section> 
 <?php
 	}
